@@ -1,4 +1,4 @@
-let result = 0;
+let result = "";
 let input = [];
 let num = '';
 
@@ -24,8 +24,10 @@ buttons.forEach(button => {
         } else if (button.classList.contains('equal')) {
             input.push(num);
             console.log(input);
-            screen.innerHTML = myCalc(...input);
-            num = myCalc(...input);
+            let rez = myCalc(...input);
+            screen.innerHTML = rez;
+            num = rez;
+            input = [];
         } else if (button.classList.contains('clear')) {
             input = [];
             result = "";
@@ -44,7 +46,9 @@ let myCalc = function () {
     for (i = 0; i < arguments.length; i++) {
         result += arguments[i];
     }
-
-    console.log(eval(result));
-    return eval(result);
+    console.log(result);
+    let x = eval(result);
+    result = "";
+    console.log(x);
+    return x;
 }
