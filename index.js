@@ -38,6 +38,7 @@ buttons.forEach(button => {
     })
 })
 
+// calculator function using eval(), becomes really easy
 let myCalc = function () {
     // console.log('pushed equal');
     for (i = 0; i < arguments.length; i++) {
