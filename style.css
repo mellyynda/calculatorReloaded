@@ -1,0 +1,127 @@
+/*google font Orbitron-cool for calculators*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #021517;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ff9666;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #021517;
+    outline: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.wrapper {
+    max-width: 500px;
+    width: 95%;
+    min-width: 300px;
+    flex-grow: 2;
+    border: 3px solid #E80C15;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 60px 60px 60px;
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FF381A;
+    background: linear-gradient(45deg, #FF381A 55%, #FF740D 45%);
+}
+
+
+.screen,
+.number,
+.operator,
+.clear,
+.equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    grid-column: span 4;
+    border: 0.5px solid #E80C15;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 2px 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #021517;
+    justify-content: flex-end;
+    margin: -10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.number,
+.operator,
+.clear,
+.equal {
+    height: 60px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.number,
+.operator,
+.clear {
+    border: .2px solid #E80C15;
+    background-color: #FF740D;
+}
+
+.clear {
+    border: .2px solid #E80C15;
+    background-color: #ff9666;
+}
+
+.equal {
+    border: .2px solid #E80C15;
+    background-color: #FF0D90;
+}
+
+.number:hover,
+.number:active,
+.number:focus,
+.operator:hover,
+.operator:active,
+.operator:focus,
+.clear:hover,
+.clear:active,
+.clear:focus {
+    background-color: #f56a00;
+}
+
+.clear:active,
+.clear:focus,
+.clear:hover {
+    background-color: #ffb999;
+}
+
+.equal:hover,
+.equal:active,
+.equal:focus {
+    background-color: #f50083;
+}
